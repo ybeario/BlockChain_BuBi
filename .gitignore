@@ -3,6 +3,8 @@ test-output/
 .gradle/
 .project
 bin/
+.classpath
+.settings/
 # Compiled class file
 *.class
 
