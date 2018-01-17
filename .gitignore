@@ -1,4 +1,4 @@
-!libs/*
+!/libs/*
 test-output/
 .gradle/
 .project
