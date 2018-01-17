@@ -1,5 +1,8 @@
 !libs/*
 test-output/
+.gradle/
+.project
+bin/
 # Compiled class file
 *.class
 
