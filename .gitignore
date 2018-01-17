@@ -1,4 +1,4 @@
-!libs/
+!libs/*.jar
 test-output/
 # Compiled class file
 *.class
