@@ -25,4 +25,5 @@ hs_err_pid*
 *.gitignore
 *.project
 *.settings/
-
+/test-output/
+.gitignore
