@@ -1,4 +1,5 @@
-!/libs/*
+!libs/
+!libs/*.jar
 test-output/
 .gradle/
 .project
