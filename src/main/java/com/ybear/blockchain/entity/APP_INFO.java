@@ -1,4 +1,4 @@
-package com.ybear.blockchain.model;
+package com.ybear.blockchain.entity;
 /**
  * 
  * @author yu xiong

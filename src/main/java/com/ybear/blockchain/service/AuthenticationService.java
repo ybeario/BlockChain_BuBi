@@ -1,6 +1,7 @@
-package com.ybear.blockchain.factory;
+package com.ybear.blockchain.service;
 
-import com.ybear.blockchain.model.APP_INFO;
+import com.ybear.blockchain.entity.APP_INFO;
+import com.ybear.blockchain.entity.URLConstant;
 
 import bubi4j.common.BubiServiceFactory;
 /**
@@ -11,14 +12,11 @@ import bubi4j.common.BubiServiceFactory;
  *
  * @description 获取token
  */
-public class AuthenticationFactory {
+public class AuthenticationService {
 	private static String accessToken = null ;
 	public static String getAuthenticationToken() throws Exception {
 		if (accessToken == null) {
-			String url = "https://api.bubidev.cn/";
-			String appid = APP_INFO.APP_ID;
-			String appkey = APP_INFO.APP_SECREAT;
-			BubiServiceFactory factory = BubiServiceFactory.getInstance(url, appid, appkey);
+			BubiServiceFactory factory=BubiService.BubiServiceFactory();
 			//获取token
 			accessToken = factory.getOAuthService().getAccessToken();
 			System.out.println("accessToken:"+accessToken);
