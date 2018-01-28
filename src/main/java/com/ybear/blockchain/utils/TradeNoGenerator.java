@@ -6,7 +6,8 @@ package com.ybear.blockchain.utils;
  * @description
  */
 public class TradeNoGenerator {
-	public void generatTradeNo() {
+	public static String generatTradeNo() {
+		return String.valueOf((int)(Math.random()*1000000000));
 		
 	}
 }
